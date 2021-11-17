@@ -1,0 +1,8 @@
+<h1>Detalles de serie</h1>
+<div *ngIf="serie">
+    <img src="{{serie.imagen}}" style="width: 150px;"/>
+    <h1>{{serie.nombre}}</h1>
+    <h1>IMBD: {{serie.puntuacion}}</h1>
+    <h1>{{serie.anyo}}</h1>
+    <a [routerLink]="['/personajes', serie.idSerie]" class="btn btn-success"> Personajes</a>
+</div>
